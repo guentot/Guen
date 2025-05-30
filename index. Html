@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <style>
+  :root {
+    --primary: #00bfff;
+    --secondary: #1e90ff;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.15);
+    --text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    animation: fadeInBody 1.5s ease-in;
+  }
+
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .promo-box {
+    background-color: var(--glass);
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  .promo-box:hover {
+    transform: scale(1.02);
+  }
+
+  .promo-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: var(--text-shadow);
+  }
+
+  .promo-box h2 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+  }
+
+  .promo-box p, .promo-box ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-shadow: var(--text-shadow);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .promo-code {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .cta-button {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .cta-button:hover {
+    background: #f0fbff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .media-section {
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .media-section img,
+  .media-section video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .media-section img:hover,
+  .media-section video:hover {
+    transform: scale(1.02);
+  }
+
+  @media (min-width: 768px) {
+    .media-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .media-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+</head>
+<body> 
+    
+ <strong> [Bonbon , Kea Guen & Lascunia , Roe] </strong></p>
+</footer>
+
+  <div class="promo-box">
+    <h1>TOKYO BY THE BAY BEACH RESORT</h1>
+    <p>Cool down and have fun at our premium Tokyo by the Bay Beach Resort!</p>
+
+    <h2>💜Details & Rates💜</h2>
+    <p><strong>Contact Number:</strong> 09503477444</p>
+    <p><strong>Entrance Fee:</strong> N/A</p>
+    <p><strong>Cottage Fee:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>With Overnight - <strong>Night: ₱800</strong></li>
+      <li>Without Overnight - <strong>Day: ₱400</strong></li>
+    </ul>
+    <p><strong>Operating Hours:</strong> Open 24 Hours</p>
+    <p><strong>Estimated Income:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>Per Day: ₱800</li>
+      <li>Per Night: ₱800</li>
+    </ul>
+    <p><strong>Room Rates:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>Large Room - ₱2,500</li>
+      <li>Medium Room - ₱1,500</li>
+      <li>Small Room - ₱1,000</li>
+    </ul>
+  </div>
+
+  <div class="media-section">
+    <!-- Photo Placeholders -->
+    <img src="guen.jpg" alt="Tokyo By the Bay Beach Resort Photo 1" />
+    <img src="guen.jpeg" alt="Tokyo By the Bay Beach Resort Photo 2" />
+    <img src="guenn.jpeg" alt="Tokyo By the Bay Beach Resort Photo 3" />
+    <img src="guennn.jpg" alt="Tokyo By the Bay Beach Resort Photo 4" />
+    <img src="guennn.jpeg" alt="Tokyo By the Bay Beach Resort Photo 5" />
+
+    <video controls>
+      <source src="wa.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <style>
+  :root {
+    --primary: #00bfff;
+    --secondary: #1e90ff;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.15);
+    --text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    animation: fadeInBody 1.5s ease-in;
+  }
+
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .promo-box {
+    background-color: var(--glass);
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  .promo-box:hover {
+    transform: scale(1.02);
+  }
+
+  .promo-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: var(--text-shadow);
+  }
+
+  .promo-box h2 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+  }
+
+  .promo-box p, .promo-box ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-shadow: var(--text-shadow);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .promo-code {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .cta-button {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .cta-button:hover {
+    background: #f0fbff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .media-section {
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .media-section img,
+  .media-section video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .media-section img:hover,
+  .media-section video:hover {
+    transform: scale(1.02);
+  }
+
+  @media (min-width: 768px) {
+    .media-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .media-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+</head>
+<body> 
+    
+ <strong> [Bonbon , Kea Guen & Lascunia , Roe] </strong></p>
+</footer>
+
+  <div class="promo-box">
+    <h1>TOKYO BY THE BAY BEACH RESORT</h1>
+    <p>Cool down and have fun at our premium Tokyo by the Bay Beach Resort!</p>
+
+    <h2>💜Details & Rates💜</h2>
+    <p><strong>Contact Number:</strong> 09503477444</p>
+    <p><strong>Entrance Fee:</strong> N/A</p>
+    <p><strong>Cottage Fee:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>With Overnight - <strong>Night: ₱800</strong></li>
+      <li>Without Overnight - <strong>Day: ₱400</strong></li>
+    </ul>
+    <p><strong>Operating Hours:</strong> Open 24 Hours</p>
+    <p><strong>Estimated Income:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>Per Day: ₱800</li>
+      <li>Per Night: ₱800</li>
+    </ul>
+    <p><strong>Room Rates:</strong></p>
+    <ul style="text-align: left; margin: 10px auto; max-width: 600px;">
+      <li>Large Room - ₱2,500</li>
+      <li>Medium Room - ₱1,500</li>
+      <li>Small Room - ₱1,000</li>
+    </ul>
+  </div>
+
+  <div class="media-section">
+    <!-- Photo Placeholders -->
+    <img src="guen.jpg" alt="Tokyo By the Bay Beach Resort Photo 1" />
+    <img src="guen.jpeg" alt="Tokyo By the Bay Beach Resort Photo 2" />
+    <img src="guenn.jpeg" alt="Tokyo By the Bay Beach Resort Photo 3" />
+    <img src="guennn.jpg" alt="Tokyo By the Bay Beach Resort Photo 4" />
+    <img src="guennn.jpeg" alt="Tokyo By the Bay Beach Resort Photo 5" />
+
+    <video controls>
+      <source src="wa.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
